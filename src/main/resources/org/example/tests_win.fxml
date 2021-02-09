@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.TestsWinController">
+    <children>
+        <AnchorPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;">
+            <children>
+                <AnchorPane layoutY="79.0" prefHeight="525.0" prefWidth="900.0" style="-fx-background-color: white;">
+                    <children>
+                        <JFXComboBox fx:id="testComboBox" focusColor="#09bd0082" labelFloat="true" layoutX="30.0" layoutY="10.0" prefHeight="44.0" prefWidth="199.0" promptText="Тест" unFocusColor="#2e3348" />
+                  <TextField fx:id="question" disable="true" layoutX="569.0" layoutY="82.0" prefHeight="44.0" prefWidth="302.0" promptText="Вопрос" />
+                  <TextField fx:id="correctAnswer" disable="true" layoutX="569.0" layoutY="153.0" prefHeight="44.0" prefWidth="302.0" promptText="Правильный ответ" />
+                  <TextField fx:id="firstFalseAnswer" disable="true" layoutX="569.0" layoutY="227.0" prefHeight="44.0" prefWidth="302.0" promptText="Вариант ответа №1" />
+                  <TextField fx:id="secondFalseAnswer" disable="true" layoutX="568.0" layoutY="298.0" prefHeight="44.0" prefWidth="302.0" promptText="Вариант ответа №2" />
+                  <TextField fx:id="thirdFalseAnswer" disable="true" layoutX="569.0" layoutY="366.0" prefHeight="44.0" prefWidth="302.0" promptText="Вариант ответа №3" />
+                  <Button fx:id="deleteTestBtn" disable="true" layoutX="298.0" layoutY="469.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="182.0" style="-fx-background-color: fafafa; -fx-border-color: #2E3348; -fx-border-radius: 5;" text="Удалить тест">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="rmvQuestionBtn" disable="true" layoutX="756.0" layoutY="426.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: #2E3348; -fx-border-radius: 5;" text="Удалить вопрос">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addQuestionBtn" disable="true" layoutX="570.0" layoutY="426.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: #2E3348; -fx-border-radius: 5; -fx-border-width: 1;" text="Новый вопрос">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="textArea" editable="false" layoutX="15.0" layoutY="76.0" prefHeight="371.0" prefWidth="464.0" style="-fx-border-color: #2E3348;" />
+                  <JFXComboBox fx:id="questionComboBox" disable="true" focusColor="#09bd0082" labelFloat="true" layoutX="263.0" layoutY="10.0" prefHeight="44.0" prefWidth="199.0" promptText="Вопрос" unFocusColor="#2e3348" />
+                  <TextField fx:id="testName" disable="true" layoutX="603.0" layoutY="19.0" prefHeight="34.0" prefWidth="233.0" promptText="Название теста" />
+                  <Button fx:id="createTestBtn" layoutX="14.0" layoutY="469.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="182.0" style="-fx-background-color: fafafa; -fx-border-color: #2E3348; -fx-border-radius: 5;" text="Создать тест">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="saveChangesBtn" disable="true" layoutX="603.0" layoutY="468.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="234.0" style="-fx-background-color: fafafa; -fx-border-color: #2E3348; -fx-border-radius: 5; -fx-border-width: 1;" text="Cохранить изменения">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="42.0" endY="243.5999755859375" layoutX="490.0" layoutY="285.0" startX="42.0" startY="-284.0" stroke="ORANGE" />
+                  <ImageView fitHeight="34.0" fitWidth="30.0" layoutX="536.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../correct.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="540.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../question.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="-85.79998779296875" layoutX="644.0" layoutY="249.0" startX="-100.0" stroke="RED" />
+                  <Line endX="-85.79998779296875" layoutX="644.0" layoutY="320.0" startX="-100.0" stroke="RED" />
+                  <Line endX="-85.79998779296875" layoutX="644.0" layoutY="387.0" startX="-100.0" stroke="RED" />
+                    </children>
+                </AnchorPane>
+                <Label layoutX="289.0" layoutY="14.0" text="Education System" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="40.0" />
+                    </font>
+                </Label>
+                <Button fx:id="backBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#initialize" prefHeight="10.0" prefWidth="116.0" style="-fx-border-radius: 20; -fx-border-color: WHITE; -fx-background-color: w #2E3348hite; -fx-border-width: 3;" text="Назад" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

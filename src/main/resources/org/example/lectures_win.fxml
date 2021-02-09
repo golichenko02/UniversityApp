@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.LecturesWinController">
+    <children>
+        <AnchorPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;">
+            <children>
+                <AnchorPane layoutX="-1.0" layoutY="77.0" prefHeight="523.0" prefWidth="900.0" style="-fx-background-color: #a3acd6;">
+                    <children>
+                        <JFXComboBox fx:id="lecturesComboBox" focusColor="#09bd0000" layoutX="701.0" prefHeight="44.0" prefWidth="199.0" promptText="Лекции" unFocusColor="#2e334700" />
+                  <WebView fx:id="webView" layoutX="8.0" layoutY="48.0" prefHeight="472.0" prefWidth="886.0" visible="false" />
+                  <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="2.0" layoutY="40.0" prefHeight="484.0" prefViewportHeight="472.0" prefViewportWidth="886.0" prefWidth="900.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: white;">
+                    <content>
+                      <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+                    </content>
+                  </ScrollPane>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="289.0" layoutY="14.0" text="Education System" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="40.0" />
+                    </font>
+                </Label>
+                <Button fx:id="backBtn" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#initialize" prefHeight="10.0" prefWidth="116.0" style="-fx-border-radius: 20; -fx-border-color: WHITE; -fx-background-color: w #2E3348hite; -fx-border-width: 3;" text="Назад" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

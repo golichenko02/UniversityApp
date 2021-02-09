@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.MainWinController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="78.0" prefHeight="322.0" prefWidth="700.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="-0.39999999999997726" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <TextField fx:id="loginField" layoutX="326.0" layoutY="96.0" prefHeight="46.0" prefWidth="246.0" promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: orange; -fx-border-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="328.0" layoutY="173.0" prefHeight="46.0" prefWidth="246.0" promptText="Пароль" style="-fx-background-color: #fafafa; -fx-border-radius: 10; -fx-border-color: orange;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="355.0" layoutY="35.0" prefHeight="46.0" prefWidth="191.0" text="Авторизация" textFill="GREY">
+               <font>
+                  <Font name="Georgia" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="signInBtn" layoutX="372.0" layoutY="296.0" mnemonicParsing="false" onAction="#openWin" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #2E3348;" text="Вход" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="falseLogOrPass" layoutX="332.0" layoutY="384.0" prefHeight="38.0" prefWidth="238.0" text="Неправильный логин или пароль" textAlignment="CENTER" textFill="#f20000" visible="false">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="toogleBtn" layoutX="364.0" layoutY="231.0" onMousePressed="#setToogleBtn" text="Преподаватель" toggleColor="#2e3348" unToggleColor="#2e3348" unToggleLineColor="#827c7c88">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </JFXToggleButton>
+            <Label fx:id="emptyFields" layoutX="376.0" layoutY="388.0" prefHeight="30.0" prefWidth="150.0" text="Заполните все поля!" textAlignment="CENTER" textFill="#f20000" visible="false">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="290.0" layoutY="17.0" prefHeight="46.0" prefWidth="321.0" text="Education System" textFill="WHITE" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="288.4">
+         <font>
+            <Font name="Georgia" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpBtn" layoutX="684.0" layoutY="25.0" mnemonicParsing="false" onAction="#initialize" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: orange;" text="Зарегистрироваться" AnchorPane.rightAnchor="44.799999999999955">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
